@@ -53,7 +53,7 @@ jobs:
     - run: cat css/demo.css
     - run: vendor/bin/phpunit
     - run: composer validate --strict
-    - run: vendor/bin/php-cs-fixer fix --dry-run --verbose
+    - run: vendor/bin/php-cs-fixer fix --dry-run --rules=@PSR2 src
     - run: vendor/bin/parallel-lint src tests
     - run: vendor/bin/security-checker security:check
 
