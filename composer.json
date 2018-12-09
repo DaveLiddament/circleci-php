@@ -1,5 +1,7 @@
 {
     "name": "demo/circle-ci",
+    "license" : "MIT",
+    "description" : "Demo showing PHP and NPM working with circle",
     "type": "project",
     "require-dev": {
         "phpunit/phpunit": "^7.5",
